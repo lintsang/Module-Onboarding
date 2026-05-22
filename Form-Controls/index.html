@@ -3,20 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <title>Sprint 1 form controls exercise</title>
+     <title>My Sprint 1 form controls exercise</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <h1>Insert Your Name Below</h1>
+      <h1>Product Pick</h1>
     </header>
     <main>
       <form>
-        <label for="fullname"> Name: </label>
-        <input type="text" name="fullname" id="fullname" required maxlength="100">
-        <button>Submit</button>
+        <fieldset>
+          <lengend>
+            Person name and email</lengend>
+            <div class="form-group">
+              <label for="fullname">Full Name:</label>
+              <input type="text" id="fullname" required minlength="2">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required pattern="^.+@.+\..+$">
+            </div>
+
+
+            </div>
+        </fieldset>
+        <!-- 
+          Create a form that can collect 
+          name, email, preferred tshirt colour and size from user-->
       </form>
     </main>
     <footer>
