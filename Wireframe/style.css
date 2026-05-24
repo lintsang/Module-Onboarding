@@ -26,10 +26,14 @@ As well as useful links to learn more */
 }
 /* ====== Base Elements ======
  General rules for basic HTML elements in any context */
-body {
+
+ body {
   background: var(--paper);
   color: var(--ink);
   font: var(--font);
+  text-align: center;
+  display: grid;
+
 }
 a {
   padding: var(--space);
@@ -41,6 +45,20 @@ svg {
   width: 100%;
   object-fit: cover;
 }
+p {
+  padding: 0 0 30px 0;
+}
+.image-wrapper img {
+  width: 100%;
+  /* aspect ratio for image */
+  aspect-ratio: 16 / 9;
+}
+#wrapper{
+  /* wrapper to make the content to 80% width */
+  width:80%;
+  margin: 0 auto;
+}
+
 /* ====== Site Layout ====== 
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
@@ -50,9 +68,11 @@ main {
   margin: 0 auto calc(var(--space) * 4) auto;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: #eee;
+  font-size: 0.8rem;
+  padding: 60px 0 60px 0;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
